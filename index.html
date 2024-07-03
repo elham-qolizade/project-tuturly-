@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="dist/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;1,6..12,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;1,6..12,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Rowdies:wght@300;400;700&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;1,6..12,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Passion+One:wght@400;700;900&family=Rowdies:wght@300;400;700&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="style/style.css" /> -->
+
+<body>
+    <div class="w-full h-auto">
+        <div class="w-full banner ">
+            <header class=" w-full h-[200px]">
+                <span class="pr-[12%] float-right text-white mobile:block lg:hidden sm:block md:block"
+                    onclick="openNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+
+                </span>
+
+                <div class="lg:w-3/5 lg:pl-[40%] lg:h-[100px] md:w-[30%] md:pl-[11%] sm:w-[30%] sm:pl-[11%]">
+                    <img src="image/logo-lg-light (1).png" alt="">
+                </div>
+                <div class="float-right w-3/4 pr-[10%] md:hidden lg:block sm:hidden  mobile:hidden">
+                    <nav class="w-4/5 h-12">
+                        <ul class="flex flex-row justify-center gap-11">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#"> Home page</a>
+                                <ul class="submenu ">
+                                    <li class="menu-item item" style="    border-bottom: 1px gray solid;"> <a
+                                            href="index.html">Home v1</a> </li>
+                                    <li class="menu-item item"> <a href="home-v2.html">Home v2</a> </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item">
+                                <a href="#"> Blog</a>
+                                <ul class="submenu">
+                                    <li class="menu-item item" style="    border-bottom: 1px gray solid;"> <a
+                                            href="index.html">Blog Archive</a> </li>
+                                    <li class="menu-item item"> <a href="home-v2.html">Blog Single</a> </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#"> pages</a>
+                                <ul class="submenu">
+                                    <li class="menu-item item" style="border-bottom: 1px solid gray;"> <a
+                                            href="about-us.html">About Us</a> </li>
+                                    <li class="menu-item item" style="    border-bottom: 1px solid gray;"> <a
+                                            href="login.html">Login</a> </li>
+                                    <li class="menu-item item" style="    border-bottom: 1px solid gray;"> <a
+                                            href="register.html">Sign Up</a> </li>
+                                    <li class="menu-item item" style="    border-bottom: 1px solid gray;"> <a
+                                            href="checkout.html">Checkout</a> </li>
+                                    <li class="menu-item item" style="    border-bottom: 1px solid gray;"> <a
+                                            href="cart.html">Cart</a> </li>
+                                    <li class="menu-item item"> <a href="product-details.html">Product Details</a> </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#"> courses
+
+                                </a>
+                                <ul class="submenu">
+                                    <li class="menu-item item" style="    border-bottom: 1px gray solid;"> <a
+                                            href="index.html">Teaching Archive</a> </li>
+                                    <li class="menu-item item"> <a href="home-v2.html">Course Details</a> </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Books
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#"> contact us</a>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="mySidenav" class="sidenav lg:hidden md:hidden sm:hidden">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div style="padding-bottom: 33px;">
+                        <a class="navbar-brand" href="index.html"> <img src="image/logo.png" alt="logo">
+
+                        </a>
+                    </div>
+
+
+                    <div class="slimScrollDiv"
+                        style="position: relative; overflow: hidden; width: auto; height: 959.875px;">
+                        <div class="aside-scroll" style="overflow: hidden; width: auto; height: 959.875px;">
+                            <ul style="    display: flex;
+                            flex-direction: column;
+                        ">
+                                <li class="menu-item menu-item-has-children" style="    border-bottom: 1px solid gray;
+                            ">
+                                    <a href="#">Home Pages</a>
+                                    <ul class="submenu">
+                                        <li class="menu-item"> <a href="index.html">Home v1</a> </li>
+                                        <li class="menu-item"> <a href="home-v2.html">Home v2</a> </li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item menu-item-has-children" style="    border-bottom: 1px solid gray;">
+                                    <a href=" #">Pages</a>
+                                    <ul class="submenu">
+                                        <li class="menu-item"> <a href="about-us.html">About Us</a> </li>
+                                        <li class="menu-item"> <a href="login.html">Login</a> </li>
+                                        <li class="menu-item"> <a href="register.html">Sign Up</a> </li>
+                                        <li class="menu-item"> <a href="checkout.html">Checkout</a> </li>
+                                        <li class="menu-item"> <a href="cart.html">Cart</a> </li>
+                                        <li class="menu-item"> <a href="product-details.html">Product Details</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children" style=" border-bottom: 1px solid gray;">
+                                    <a href="#">Courses</a>
+                                    <ul class="submenu">
+                                        <li class="menu-item"> <a href="courses.html">Teaching Archive</a> </li>
+                                        <li class="menu-item"> <a href="course-details.html">Course Details</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item" style=" border-bottom: 1px solid gray;">
+                                    <a href="books.html">Books</a>
+                                </li>
+                                <li class="menu-item" style=" border-bottom: 1px solid gray;">
+                                    <a href="contact-us.html">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="slimScrollBar"
+                            style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 1; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 959.75px;">
+                        </div>
+                        <div class="slimScrollRail"
+                            style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="main">
+
+                </div>
+                <div class="slider">
+                    <div class="transition-all duration-1000 translate-x--200vw ease delay-0 slideer w-300vw">
+                        <div class="slider-container slide1">
+                            <div class=" banner-inner lg:pt-[1%] md:pt-[12%] sm:pt-[17%]">
+                                <h1 class="text-white title lg:text-[40px] md:text-[30px] sm:text-[30px] ">
+                                    Getting Education Became <span class="custom-primary">Easier</span> </h1>
+                                <p class="text-white subtitle lg:text-[30px] md:text-[25px] sm:text-[25px]">Bacon ipsum
+                                    dolor amet ball
+                                    tip pork chop cow tenderloin
+                                    andouille. Pastrami pork picanha tongue venison strip steak</p>
+                                <button class="btn-custom lg:ml-[36%] md:ml-[30%] sm:ml-[30%]">
+                                    <a> Access 100 Books Now</a>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="slider-container slide2">
+                            <div class="banner-inner lg:pt-[1%] md:pt-[12%] sm:pt-[17%]">
+                                <h1 class="text-white title md:text-[26px] sm:text-[26px] lg:text-[35px]">Learn The
+                                    <span class="custom-primary">Physics</span>Play
+                                    With
+                                    Physics
+                                </h1>
+                                <p class="text-white subtitle md:text-[27px] lg:text-[33px] sm:text-[27px]">Bacon ipsum
+                                    dolor amet ball
+                                    tip
+                                    pork chop cow
+                                    tenderloin
+                                    andouille. Pastrami pork picanha tongue venison strip steak</p>
+                                <button class="btn-custom lg:ml-[36%] md:ml-[30%] sm:ml-[30%] "> <a> Contact Me
+                                    </a></button>
+
+                            </div>
+                        </div>
+                        <div class="slider-container slide3">
+                            <div class="banner-inner md:pt-[12%] lg:pt-[1%] sm:pt-[17%]">
+                                <h1 class="text-white title lg:text-[36px] md:text-[30px] sm:text-[30px] "><span
+                                        class="custom-primary">Elevate</span>Communication
+                                    Skill
+                                    In English </h1>
+                                <p class="text-white subtitle lg:text-[30px] md:text-[25px] sm:text-[25px]">Bacon ipsum
+                                    dolor amet ball tip pork chop cow tenderloin
+                                    andouille. Pastrami pork picanha tongue venison strip steak</p>
+                                <button class="btn-custom lg:ml-[36%] md:ml-[30%] sm:ml-[30%]"> <a>Visit My Blog
+                                    </a></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </header>
+        </div>
+    </div>
+    </div>
+    <div class="slide_btn">
+        <div id="button-prev" class="button"></div>
+        <div id="button-next" class="button"></div>
+    </div>
+    <div class="w-full ">
+        <div class="grid gap-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 w-[88%] pl-[12%] pt-[6%]">
+            <div class="w-full">
+                <a href="courses.html" class="ct-category">
+                    <div class="ct-category-img">
+                        <img src="image/breakfast.jpg" alt="category" class="rounded-lg">
+                    </div>
+                    <div class="rounded-lg ct-category-info lg:opacity-0 md:opacity-1">
+                        <h5>Physics</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="courses.html" class="ct-category">
+                    <div class="ct-category-img">
+                        <img src="image/quick-food.jpg" alt="category" class="rounded-lg">
+
+
+                    </div>
+                    <div class="ct-category-info lg:opacity-0 md:opacity-1 sm:opacity-1">
+                        <h5>Maths</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="courses.html" class="ct-category">
+                    <div class="ct-category-img">
+                        <img src="image/cuisine.jpg" alt="category" class="rounded-lg">
+
+                    </div>
+                    <div class="ct-category-info lg:opacity-0 md:opacity-1 sm:opacity-1">
+                        <h5>English</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="courses.html" class="ct-category">
+                    <div class="ct-category-img">
+
+                        <img src="image/vegan.jpg" alt="category" class="rounded-lg">
+                    </div>
+                    <div class="ct-category-info lg:opacity-0 md:opacity-1 sm:opacity-1">
+                        <h5>History</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="courses.html" class="ct-category">
+                    <div class="ct-category-img">
+                        <img src="image/dairy.jpg" alt="category" class="rounded-lg">
+
+                    </div>
+                    <div class="ct-category-info lg:opacity-0 md:opacity-1 sm:opacity-1">
+                        <h5>Geography</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="courses.html" class="ct-category">
+                    <div class="ct-category-img">
+                        <img src="image/desserts.jpg" alt="category" class="rounded-lg">
+
+                    </div>
+                    <div class="ct-category-info lg:opacity-0 md:opacity-1 sm:opacity-1">
+                        <h5>Arabic</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="courses.html" class="ct-category">
+                    <div class="ct-category-img">
+                        <img src="image/pizzas.jpg" alt="category" class="rounded-lg">
+                    </div>
+                    <div class="ct-category-info lg:opacity-0 md:opacity-1 sm:opacity-1">
+                        <h5>French</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="courses.html" class="ct-category">
+                    <div class="ct-category-img">
+                        <img src="image/pancakes.jpg" alt="category" class="rounded-lg">
+                    </div>
+                    <div class="ct-category-info lg:opacity-0 md:opacity-1 sm:opacity-1">
+                        <h5>Jawa</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w-full h-auto">
+        <div
+            class="flex lg:pl-[2%] justify-center w-full lg:flex-row md:flex-col mobile:flex-col mobile:pl-[10%] sm:flex-col pt-[4%] md:pl-[10%] sm:pl-[10%]">
+            <div class="lg:w-1/2 lg:pl-[8%] md:w-full sm:w-full">
+                <img src="image/about-2.jpg" alt="">
+            </div>
+            <div class="lg:w-1/2 pt-[4%] md:w-full sm:w-full">
+                <div class=" lg:w-[83%] md:w-full sm:w-full">
+                    <h2 class="text-left md:text-[28px] sm:text-[28px]  text-[36px] pb-[2%]"
+                        style="  font-family:Rowdies, sans-serif  ">Tuturly Helps
+                        You <span class="custom-primary">Achieve </span> your Goal </h2>
+                    </h2>
+                    <h3 class="lg:text-[24px] text-blue-500 md:text-[23px] sm:text-[23px]" style="font-family:Rowdies, sans-serif;
+                      
+                        ">With Tuturly You Get Innovative Teaching Experience For Every
+                        Platform.
+                    </h3>
+                </div>
+                <div class="flex w-full lg:flex-row md:flex-col sm:flex-col mobile:flex-col gap-[5%] pt-[4%] pb-[3%]">
+                    <div class="w-1/2" style="display: flex;
+                        width: 42%;
+                        height: 50%;
+                        gap: 10%;
+                        flex-direction: column;">
+                        <p class="mb-0 text-left " style="    font-family: Signika Negative, sans-serif;
+                            font-size: 19px;
+                            padding-bottom: 5%;
+                            color: #605959ad;;">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard.
+                        </p>
+                        <div>
+                            <ul style="    display: flex;
+                                flex-direction: column;
+                                gap: 12px;
+                            ">
+                                <li class="flex ">
+
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1ElEQVR4nNVYS48UVRSuie/3QsVggO5zqhkIKw0QJdEYojsF3Rp3uvK5QcT/gC4lcWNijI+YuDKawGB6+pxqwuAksGAjRBmkzqlBcCKgQjBY5rs1M5mZfkzXTDWJ36bTt+499dW953znq4qi/zu4na2JxV5itfdZ7ANS/xi/rLYvbtmLuD5UApuSC/ex2DukPsli/7J6TmKXSf0UxsKv2GWM4zqJ/Yj5WFcZia2T+W3cyvay+gyJXWfxQyT+Rq2Z1bvNxzhp9mYxL8z/va7+LuKsikitbZtZ/ASL3WC1z3oR6IUNrYxY/POwXvw4STq6IiIs6bPFMdjPsfrWFQWZi5X4Nlb7hcQuxUm2szwR9WusNj7atIeiCoA4rNZi9atxku4Y+GgoJKKNbzl58vaoQiBeQciyuJWuXz5ZxU/gaKrakaVoiD/MamdQgX2TOlSN2I3V5shyoLZvD+Wvvqe3jqjPoGqiilBrnrmT1N5qfH/qjg5C6l+Q+MWuOhQETex62fLth1l1vrah9dvapdc26jTjfrHY2x0LC2X1g1FFYLWnCn2x93rP8TFWm1g82M7WBIkXf70KImsn7e6iPfiR6Ov8ll7zcIS4L5J6frBoep5XdUSs9hGL/8Xj5zb2m4ejwn3rSbp74eJ90JYoz0dWS4Q0fQ5P2zUXliLPR0jtyqKjZLUPWf2nfutqSfpYKMU+hHls5gEWP0tqPwz6YDhOJPpCMgfQyPotqifpbiQkiX36TDO/tUfgT9B/6m2vDUIk3BuNWO1AqZ0BWOzlYAvUvl135Ne7ogUgyV4IHkfttagEZndm/4pyhlvZ8yz+N4k1G0cv3o+xzRPpg6zmJPZdqbzL8xFW+xPKPz8WrGKJaqLEnma1P6BNKEtS/xLqvT45++jARBZUE2m6q0Nn4NAGDdQYTx9nsWnsSAiY2CtRSaDikIcdTbnwrH6oTDCSdJTFpkjsm7JEwnr1w6x2tCtLJCesYlQCjea5dYsUdEDM9SaocMfFRw5m95D6BXjW6CaAxL8i8RSto+sEuPjQ3BLfNkwidcmeKHI0fXU5p3cc5nmoTk9sisWO9Wui80lJYpfgVYfigcUFFYhcG2hRnGQ74eJBqKodKnYERPxqTaefLLU4TtIdcPHBPLd9ewU5MoUdKU1kDnidmHu3hmdFOUZlyxfqHIybHRv4aPolNanvgXkumqSPQRt6EWsk5+OgWeqHSe0flG+omuWStQy2NM/fG+RbbWL+K4TaFRI/Hb5CiJ8OTa/4CoF38wmQ7qkjVaERmmO6Cw4N7X/2+8x+/Mf4sGThpuI/jzfhDQqUogwAAAAASUVORK5CYII=">
+
+                                    <span class="text-black pt-[1%] pl-[3%]"> Nsectetur cing elit.</span>
+
+                                </li>
+                                <li class="flex">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1ElEQVR4nNVYS48UVRSuie/3QsVggO5zqhkIKw0QJdEYojsF3Rp3uvK5QcT/gC4lcWNijI+YuDKawGB6+pxqwuAksGAjRBmkzqlBcCKgQjBY5rs1M5mZfkzXTDWJ36bTt+499dW953znq4qi/zu4na2JxV5itfdZ7ANS/xi/rLYvbtmLuD5UApuSC/ex2DukPsli/7J6TmKXSf0UxsKv2GWM4zqJ/Yj5WFcZia2T+W3cyvay+gyJXWfxQyT+Rq2Z1bvNxzhp9mYxL8z/va7+LuKsikitbZtZ/ASL3WC1z3oR6IUNrYxY/POwXvw4STq6IiIs6bPFMdjPsfrWFQWZi5X4Nlb7hcQuxUm2szwR9WusNj7atIeiCoA4rNZi9atxku4Y+GgoJKKNbzl58vaoQiBeQciyuJWuXz5ZxU/gaKrakaVoiD/MamdQgX2TOlSN2I3V5shyoLZvD+Wvvqe3jqjPoGqiilBrnrmT1N5qfH/qjg5C6l+Q+MWuOhQETex62fLth1l1vrah9dvapdc26jTjfrHY2x0LC2X1g1FFYLWnCn2x93rP8TFWm1g82M7WBIkXf70KImsn7e6iPfiR6Ov8ll7zcIS4L5J6frBoep5XdUSs9hGL/8Xj5zb2m4ejwn3rSbp74eJ90JYoz0dWS4Q0fQ5P2zUXliLPR0jtyqKjZLUPWf2nfutqSfpYKMU+hHls5gEWP0tqPwz6YDhOJPpCMgfQyPotqifpbiQkiX36TDO/tUfgT9B/6m2vDUIk3BuNWO1AqZ0BWOzlYAvUvl135Ne7ogUgyV4IHkfttagEZndm/4pyhlvZ8yz+N4k1G0cv3o+xzRPpg6zmJPZdqbzL8xFW+xPKPz8WrGKJaqLEnma1P6BNKEtS/xLqvT45++jARBZUE2m6q0Nn4NAGDdQYTx9nsWnsSAiY2CtRSaDikIcdTbnwrH6oTDCSdJTFpkjsm7JEwnr1w6x2tCtLJCesYlQCjea5dYsUdEDM9SaocMfFRw5m95D6BXjW6CaAxL8i8RSto+sEuPjQ3BLfNkwidcmeKHI0fXU5p3cc5nmoTk9sisWO9Wui80lJYpfgVYfigcUFFYhcG2hRnGQ74eJBqKodKnYERPxqTaefLLU4TtIdcPHBPLd9ewU5MoUdKU1kDnidmHu3hmdFOUZlyxfqHIybHRv4aPolNanvgXkumqSPQRt6EWsk5+OgWeqHSe0flG+omuWStQy2NM/fG+RbbWL+K4TaFRI/Hb5CiJ8OTa/4CoF38wmQ7qkjVaERmmO6Cw4N7X/2+8x+/Mf4sGThpuI/jzfhDQqUogwAAAAASUVORK5CYII=">
+                                    <span class="text-black pt-[1%] pl-[3%]"> Nsectetur cing elit.</span>
+
+                                </li>
+                                <li class="flex">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1ElEQVR4nNVYS48UVRSuie/3QsVggO5zqhkIKw0QJdEYojsF3Rp3uvK5QcT/gC4lcWNijI+YuDKawGB6+pxqwuAksGAjRBmkzqlBcCKgQjBY5rs1M5mZfkzXTDWJ36bTt+499dW953znq4qi/zu4na2JxV5itfdZ7ANS/xi/rLYvbtmLuD5UApuSC/ex2DukPsli/7J6TmKXSf0UxsKv2GWM4zqJ/Yj5WFcZia2T+W3cyvay+gyJXWfxQyT+Rq2Z1bvNxzhp9mYxL8z/va7+LuKsikitbZtZ/ASL3WC1z3oR6IUNrYxY/POwXvw4STq6IiIs6bPFMdjPsfrWFQWZi5X4Nlb7hcQuxUm2szwR9WusNj7atIeiCoA4rNZi9atxku4Y+GgoJKKNbzl58vaoQiBeQciyuJWuXz5ZxU/gaKrakaVoiD/MamdQgX2TOlSN2I3V5shyoLZvD+Wvvqe3jqjPoGqiilBrnrmT1N5qfH/qjg5C6l+Q+MWuOhQETex62fLth1l1vrah9dvapdc26jTjfrHY2x0LC2X1g1FFYLWnCn2x93rP8TFWm1g82M7WBIkXf70KImsn7e6iPfiR6Ov8ll7zcIS4L5J6frBoep5XdUSs9hGL/8Xj5zb2m4ejwn3rSbp74eJ90JYoz0dWS4Q0fQ5P2zUXliLPR0jtyqKjZLUPWf2nfutqSfpYKMU+hHls5gEWP0tqPwz6YDhOJPpCMgfQyPotqifpbiQkiX36TDO/tUfgT9B/6m2vDUIk3BuNWO1AqZ0BWOzlYAvUvl135Ne7ogUgyV4IHkfttagEZndm/4pyhlvZ8yz+N4k1G0cv3o+xzRPpg6zmJPZdqbzL8xFW+xPKPz8WrGKJaqLEnma1P6BNKEtS/xLqvT45++jARBZUE2m6q0Nn4NAGDdQYTx9nsWnsSAiY2CtRSaDikIcdTbnwrH6oTDCSdJTFpkjsm7JEwnr1w6x2tCtLJCesYlQCjea5dYsUdEDM9SaocMfFRw5m95D6BXjW6CaAxL8i8RSto+sEuPjQ3BLfNkwidcmeKHI0fXU5p3cc5nmoTk9sisWO9Wui80lJYpfgVYfigcUFFYhcG2hRnGQ74eJBqKodKnYERPxqTaefLLU4TtIdcPHBPLd9ewU5MoUdKU1kDnidmHu3hmdFOUZlyxfqHIybHRv4aPolNanvgXkumqSPQRt6EWsk5+OgWeqHSe0flG+omuWStQy2NM/fG+RbbWL+K4TaFRI/Hb5CiJ8OTa/4CoF38wmQ7qkjVaERmmO6Cw4N7X/2+8x+/Mf4sGThpuI/jzfhDQqUogwAAAAASUVORK5CYII=">
+                                    <span class="text-black pt-[1%] pl-[3%]"> Nsectetur cing elit.</span>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-[36%] lg:h-[268px] sm:mt-[5%] md:mt-[5%] md:w-[90%] sm:w-[90%] md:h-[200px] sm:h-[200px]"
+                        style="background-color: #f4f4f5; 
+                        border-radius: 6%;
+                    ">
+                        <div
+                            class="lg:pt-[20%] lg:w-[80%] lg:pl-[20%] md:pt-[5%] md:pl-[8%] md:w-[60%] sm:pl-[8%] sm:pt-[5%] sm:w-[60%]">
+                            <img class="mb-0 mobile: mobile:mt-5" style="    margin-bottom: 11%;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADTElEQVR4nO1bS2sUQRCeiPjCqwdRyVbvBiEXDyoKKv4BQRAEf4IHwZu/QGJ8gApevHgQBB9RLxrx4pKqzYqQY/AQkMBmqzZRxAd6U0d6ptcMZl+zmZ3pzfQHzTK93b1V31Z901PNeJ6Dg4NDFxRn6vsU8RQgf1ckvrUNhYFkcnx+fouXqPMonzN3Lh4RVxIjQBFP6UUB+WWpvLTXsxiK+HgzEhJbFEzY2+58E80oGNiCQDLb7AOSSrQ/er1hCVAoFMk1HNgP20pAOzgCyEWAn4sUgDYiGGhDRBNyJ4K2IDMR9PJOAORlH2B7pGQngpQTApTbCa4zVSpyHpC/FbBxxMujBiji9yZ97iVmZB92JL6g6mFcgZYORAoXX0rTC1sTMzSGHZmJoCK+HK3cADZOJWZoDDsyE0EgWTDzXofj+X5ihsawYyALqi7jiiQHjdONYrVWUsh/dLVptLy4LRcEAMlk+O/zHXM9p6+LM3y6p0q0LswiPwKS54D8dL32pkuA748A8Ycg7yt8IhiPfMk49qCfSvR67U1VBGFWDoeiJ3XP9zfpvtFyo9BMg73V2vZulWj9CcjTmROg+hBBhXzdEHDrP0ffmXlneqlEh2mRMQGxx/n+iCJe7BTOgPKwp7V6sMc6AkZp+ahR/19rnEf+rdNAEf/YPcc7NiQBgHLTOHuj1TxAqYZ60jg7FARAHBEM1F9qur/dw48ivmgi5MlQEKBiiKBCPmacW9RktFp/rFrbE6aC/Bwvr+zsVQTbHdVZlQJAcjuMFL7WcS4KhoTWzwXzUJ6Z2+C0dlr36U8gfrUqnKvf9WNvOgSg1IP+ihzqNBeIL0TToFCp72+3EQKST7q1SsM49qZEAL9RxC+6zS2h7AoelCLn+jrEFfFjXTwx5HzV12O0rEqVlaImK/gOhfqxN9WdYJqwSgSzgFUpkAUcAeQiwHciSE4E/dRFRTkRFHcXUHm4DYLbCYrbCbaCE0HKXgT1mYOpP3xMbFG1+uR3N/ocbnMDkquJE6CGpOkjuJNlf3PyBCC/1ZUaz1IMLAWVWVif6HoWY2AEwJC8MDFAAmRNhdY2/FN/ffiaNAodKrTWNZQJbxAoranQ2tWC8jvKRKKvyzk4OHh5wF8zQM8RD8hCEwAAAABJRU5ErkJggg==">
+                            <p>We Are Providing Best Services Possible</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="flex flex-row w-full" style="    border-left: 6px solid #20ad96;    padding-left: 5%;">
+                    <div class="w-20 "> <img src="image/people-4.jpg" alt="" class="rounded-full "
+                            style="border: solid 4px white;"></div>
+                    <div style="    padding-top: 2%;
+                        padding-left: 4%;
+                    "><img src="image/signature-2.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div style="width: 100%; height: 100%;">
+        <div class="w-full h-[50%] mb-[15%] ">
+            <div class="w-full text-center">
+                <h2 class="text-[50px]" style="     font-family: Signika Negative, sans-serif;">What We Provide </h2>
+                <p class="text-gray text-[19px]">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.
+                </p>
+            </div>
+            <div class="pt-[2%] flex flex-wrap h-[100%]  w-full justify-center gap-[4%]">
+                <div class="w-[330px] relative card mt-[3%]">
+                    <div class="flex gap-4">
+                        <img
+                            src="data:image/png;base64,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">
+                        <h3 style="font-size: 29px;
+                        padding-top: 2%;
+                        font-family: Signika Negative, sans-serif ;
+                    ">
+                            <a href="#">Physic</a>
+                        </h3>
+
+                    </div>
+                    <div>
+                        <p style="color: gray; font-size: 16px; font-family:Signika Negative, sans-serif ;">Lorem ipsum
+                            dolor si amet, dusino situ sint pertinac
+                            constituto, mir es dignsius quo
+                            great.Lorem Ipsum is simply dummy text of the printing</p>
+                    </div>
+                    <div class="flex">
+                        <div class="plus">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADfElEQVR4nN1Yy05UQRAdVixEcefOme47YIIxvvD1A2qMmiAmLlzgSvEDTEhwxSMxPlgg/spERR7TdUWIJgqKRDYmMlUDEQlqTHTDmNO3CSLM684MI1bSyc3tnuozt6qrzulI5H+36MjH3SqZPq6MXNbJ9DUMPOMd5qoCyiM5qon7lOF32vCKJslsOgyvKMNvteH7XpKPVBZVJlOjiVuU4Zerm2uSSUXS75FcjyX5TJTmT2LgWZPcwJwmnlr7EzwR81MXy45NmVSjMjyMTZSRRWW4q4HmdaG/j/sLnjLcrY18cV930Bv7FC8POJ+vKuLviuQngDWNLNSF9dU0slCniXucr2+en7pSGjgjnTaPiKc9Su+PlMn06PwBTfw+CD13hHNCcjsIKQ/Hxxd3RcpsTfZrymOXmx1Fh9Ul9mA8MVsbqZDFE7O1ingIexUcbnsgbM7xdCn5VqghOtrIjDL8FYcp9+pMpgYhRRKHyTllpBMjTE4qI7+0kae5FxK3uLzrKnYTmCJ5hREJYZqkN9g7fT7rIhRh1Lk9T9I7thrgPv/zzqBO8niO9hX+65UKEIYaCQzx0dThzSb7cJqK6RBlBzg612Crh+F7G52j8ZNMhnVeDoDWhyUg8mbdS9CioGNIf7UBasMDwLKuOcRM+gRiD1ZSfYBy03YXX5rXHCelFS9jPp+uNkDPyFnHeC6toQYTxhf0U6dyFmEHINvQRn5g5FuXq5gDgwPYtn0Aqn8yxNyyfQ5J1JUZbeRh1QESP9pQZqxzqC/iqWoDVMTT2sjrDROa+IFFnpeTVQ6gMqlGyweI726YhG51ZKG7WgC1o1xRP3UoywKeAOUJy6RVCQAtsyZZUkbGsi6CqHZHvGerASqSO+70nsu5EEIJlB80fKsof4zmDoLyK8OJvIuh+CGqoVsrITf/Nj24VK9JPmji5b3JtIoUYpCAjn49q7jsNDxs90pKa1E/hph2R36oEl9SDy7Vr9736GT6VjgnABl0mJkwOZkr52xY4TssuD/DjZy0upWkF+orrK/4+OIunNbAFy8XHdasjv0FD6I6uBe00rAHAidSXIdAEV5yzSBR8IEoxhSlLkC3rt6gquCGdUD70g6aBC5nByiTL+1o/La3rt24vshb58ph0K2QhppkMt8VMBQaeivyruLAsubVcznmSG8bhn32pXkr6mjV7Td/F5YlR3ZiQAAAAABJRU5ErkJggg==">
+                        </div>
+
+                        <a style="    padding-top: 2%;
+                        padding-left: 1%;" href="#">read more</a>
+                        <div class="box">
+                            <span class="anime">
+
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-[330px]  card mt-[3%]">
+                    <div class="flex gap-4">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVR4nO2azUrEMBCAo2ePCoKIZFr3sL6IzyToA6jvVHYCXgQRD3qVakb2KSqxVrS07mx/tkl2Pii7TNMm384kXUqUiokE6VwbegNDRUiHNpS7sf+IuMDUg+ojoyqq4BjZ3ui9QURWIxnZRGmBsQuN9r5TZ36JELu9iDCQjIRbWkWxA0iP7CctkuGKzLPlHqB9HfTe0C6yqw09rNEZjiiC3UWiKa0WRGRgQDLyjVtBmiZfcHNkHUSEgWSkC1JafUor1ENFK6JGQOYIA8lIF6S0GGxvaZ3e5UeAdDXL7H79nIuBoctk8X7M6mxKEY32omxjn1KkgyruvruYO+fasDqb5OXDn1+9HHAl81vCfTZly8uXD2lt4HWxtuu8Kq1mmS+J55Nseaj+IQwRpJfgRNIYSmvmx2Q3vUUA7c3K5dfYa+9XrcR8nDmZ1gci2tsUab6OyBDA1v5F6YOIMJCMeF9aOpZNNUm5zSkPfpuTioBPCLDf0a361KsAAAAASUVORK5CYII=">
+                        <h3 style="font-size: 29px;
+                        padding-top: 2%;
+                        font-family: Signika Negative, sans-serif ;
+                    ">
+                            <a href="#">Maths</a>
+                        </h3>
+
+                    </div>
+
+                    <div>
+                        <p style="color: gray; font-size: 16px; font-family:Signika Negative, sans-serif ;">Lorem ipsum
+                            dolor si amet, dusino situ sint pertinac
+                            constituto, mir es dignsius quo
+                            great.Lorem Ipsum is simply dummy text of the printing</p>
+                    </div>
+                    <div class="flex">
+                        <div class="plus">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADfElEQVR4nN1Yy05UQRAdVixEcefOme47YIIxvvD1A2qMmiAmLlzgSvEDTEhwxSMxPlgg/spERR7TdUWIJgqKRDYmMlUDEQlqTHTDmNO3CSLM684MI1bSyc3tnuozt6qrzulI5H+36MjH3SqZPq6MXNbJ9DUMPOMd5qoCyiM5qon7lOF32vCKJslsOgyvKMNvteH7XpKPVBZVJlOjiVuU4Zerm2uSSUXS75FcjyX5TJTmT2LgWZPcwJwmnlr7EzwR81MXy45NmVSjMjyMTZSRRWW4q4HmdaG/j/sLnjLcrY18cV930Bv7FC8POJ+vKuLviuQngDWNLNSF9dU0slCniXucr2+en7pSGjgjnTaPiKc9Su+PlMn06PwBTfw+CD13hHNCcjsIKQ/Hxxd3RcpsTfZrymOXmx1Fh9Ul9mA8MVsbqZDFE7O1ingIexUcbnsgbM7xdCn5VqghOtrIjDL8FYcp9+pMpgYhRRKHyTllpBMjTE4qI7+0kae5FxK3uLzrKnYTmCJ5hREJYZqkN9g7fT7rIhRh1Lk9T9I7thrgPv/zzqBO8niO9hX+65UKEIYaCQzx0dThzSb7cJqK6RBlBzg612Crh+F7G52j8ZNMhnVeDoDWhyUg8mbdS9CioGNIf7UBasMDwLKuOcRM+gRiD1ZSfYBy03YXX5rXHCelFS9jPp+uNkDPyFnHeC6toQYTxhf0U6dyFmEHINvQRn5g5FuXq5gDgwPYtn0Aqn8yxNyyfQ5J1JUZbeRh1QESP9pQZqxzqC/iqWoDVMTT2sjrDROa+IFFnpeTVQ6gMqlGyweI726YhG51ZKG7WgC1o1xRP3UoywKeAOUJy6RVCQAtsyZZUkbGsi6CqHZHvGerASqSO+70nsu5EEIJlB80fKsof4zmDoLyK8OJvIuh+CGqoVsrITf/Nj24VK9JPmji5b3JtIoUYpCAjn49q7jsNDxs90pKa1E/hph2R36oEl9SDy7Vr9736GT6VjgnABl0mJkwOZkr52xY4TssuD/DjZy0upWkF+orrK/4+OIunNbAFy8XHdasjv0FD6I6uBe00rAHAidSXIdAEV5yzSBR8IEoxhSlLkC3rt6gquCGdUD70g6aBC5nByiTL+1o/La3rt24vshb58ph0K2QhppkMt8VMBQaeivyruLAsubVcznmSG8bhn32pXkr6mjV7Td/F5YlR3ZiQAAAAABJRU5ErkJggg==">
+                        </div>
+
+                        <a style="    padding-top: 2%;
+                        padding-left: 1%;" href="#">read more</a>
+
+                    </div>
+                    <div class="box">
+                        <span class="anime">
+
+                        </span>
+                    </div>
+                </div>
+                <div class="w-[330px] card mt-[3%]">
+                    <div class="flex gap-4">
+                        <div class="plus">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKklEQVR4nO1bQU7DMBC0VATv8JZTP8EdLryAh8CP+gCuFC8cyhFVBZWzly+AOBg5bSM3NUmaYteNd6Q9uI2y9njHu1LWQjB2g0R6BiSTkklF36D0Czx+XonQgAQWXGdDpa+jECAiYjSbnUqlb5e+9WvDeNo7AizO7xdnRbij/qkf05foIwE+303jIAAmgDgCwAmz4GlREbYN+WDRKT2LrDoNaQcnAHaYVAi/XcdBJgI1Tr1ycELYB7+E9OQoCYCGEPa+WxF6CJgnSQA0SGCvCY3NABS92+eHSDdpEaC2d8nndJ8J2UXbZyXSwpLR5n0xz6MSXSWwpXX3bBibgV24u/tNvtqMkyIAqlGkSNXt/lETIHaZkEf7bXx19pcaAcP17iv6uHgwJ219dfUXrBIUHSdkU96WbFbnQzIEQNs0aHXuaLs69r9bTzwEqCQJEJF1d1QEQEBLhgDwTcpbyv6juZJKsRKMiYMR4IIJQI4AwxLAzM4AWVMJxkSSaTArAkSuWQCYAMpcAoorwRJZRoALJgA5Akx2EpBcCVLmaRC5EjRcCmPOElBcCZbIMgJcMAHIEWBYAshngBGRkXW3+Ki4D0B3m/cD/hzHuS8AqdoTXYYlQAX+Gtz1zhDqafDFx0CTxA6ZhqOACUCOAMMSQD4DjO0gLZooFb1ZK7pIbVdpLoegXDVPb6Q75zfRV0BlwXbnrVUJEX0FFJ2jer4O+fKPtSSK1trllRqG2B+/H2IkZu4/kHsAAAAASUVORK5CYII=">
+                        </div>
+
+                        <h3 style="font-size: 29px;
+                        padding-top: 2%;
+                        font-family: Signika Negative, sans-serif ;
+                    ">
+                            <a href="#">English</a>
+                        </h3>
+
+                    </div>
+                    <div>
+                        <p style="color: gray; font-size: 16px; font-family:Signika Negative, sans-serif ;">Lorem ipsum
+                            dolor si amet, dusino situ sint pertinac
+                            constituto, mir es dignsius quo
+                            great.Lorem Ipsum is simply dummy text of the printing</p>
+                    </div>
+                    <div class="flex">
+                        <div class="plus">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADfElEQVR4nN1Yy05UQRAdVixEcefOme47YIIxvvD1A2qMmiAmLlzgSvEDTEhwxSMxPlgg/spERR7TdUWIJgqKRDYmMlUDEQlqTHTDmNO3CSLM684MI1bSyc3tnuozt6qrzulI5H+36MjH3SqZPq6MXNbJ9DUMPOMd5qoCyiM5qon7lOF32vCKJslsOgyvKMNvteH7XpKPVBZVJlOjiVuU4Zerm2uSSUXS75FcjyX5TJTmT2LgWZPcwJwmnlr7EzwR81MXy45NmVSjMjyMTZSRRWW4q4HmdaG/j/sLnjLcrY18cV930Bv7FC8POJ+vKuLviuQngDWNLNSF9dU0slCniXucr2+en7pSGjgjnTaPiKc9Su+PlMn06PwBTfw+CD13hHNCcjsIKQ/Hxxd3RcpsTfZrymOXmx1Fh9Ul9mA8MVsbqZDFE7O1ingIexUcbnsgbM7xdCn5VqghOtrIjDL8FYcp9+pMpgYhRRKHyTllpBMjTE4qI7+0kae5FxK3uLzrKnYTmCJ5hREJYZqkN9g7fT7rIhRh1Lk9T9I7thrgPv/zzqBO8niO9hX+65UKEIYaCQzx0dThzSb7cJqK6RBlBzg612Crh+F7G52j8ZNMhnVeDoDWhyUg8mbdS9CioGNIf7UBasMDwLKuOcRM+gRiD1ZSfYBy03YXX5rXHCelFS9jPp+uNkDPyFnHeC6toQYTxhf0U6dyFmEHINvQRn5g5FuXq5gDgwPYtn0Aqn8yxNyyfQ5J1JUZbeRh1QESP9pQZqxzqC/iqWoDVMTT2sjrDROa+IFFnpeTVQ6gMqlGyweI726YhG51ZKG7WgC1o1xRP3UoywKeAOUJy6RVCQAtsyZZUkbGsi6CqHZHvGerASqSO+70nsu5EEIJlB80fKsof4zmDoLyK8OJvIuh+CGqoVsrITf/Nj24VK9JPmji5b3JtIoUYpCAjn49q7jsNDxs90pKa1E/hph2R36oEl9SDy7Vr9736GT6VjgnABl0mJkwOZkr52xY4TssuD/DjZy0upWkF+orrK/4+OIunNbAFy8XHdasjv0FD6I6uBe00rAHAidSXIdAEV5yzSBR8IEoxhSlLkC3rt6gquCGdUD70g6aBC5nByiTL+1o/La3rt24vshb58ph0K2QhppkMt8VMBQaeivyruLAsubVcznmSG8bhn32pXkr6mjV7Td/F5YlR3ZiQAAAAABJRU5ErkJggg==">
+                        </div>
+
+                        <a style="    padding-top: 2%;
+                        padding-left: 1%;" href="#">read more</a>
+                        <div class="box">
+                            <span class="anime">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[330px] card mt-[3%]">
+                    <div class="flex gap-4">
+
+                        <img
+                            src="data:image/png;base64,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">
+
+
+                        <h3 style="font-size: 29px;
+                        padding-top: 2%;
+                        font-family: Signika Negative, sans-serif ;
+                    ">
+                            <a href="#">History</a>
+                        </h3>
+
+                    </div>
+                    <div>
+                        <p style="color: gray; font-size: 16px; font-family:Signika Negative, sans-serif ;">Lorem ipsum
+                            dolor si amet, dusino situ sint pertinac
+                            constituto, mir es dignsius quo
+                            great.Lorem Ipsum is simply dummy text of the printing</p>
+                    </div>
+                    <div class="flex">
+                        <div class="plus">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADfElEQVR4nN1Yy05UQRAdVixEcefOme47YIIxvvD1A2qMmiAmLlzgSvEDTEhwxSMxPlgg/spERR7TdUWIJgqKRDYmMlUDEQlqTHTDmNO3CSLM684MI1bSyc3tnuozt6qrzulI5H+36MjH3SqZPq6MXNbJ9DUMPOMd5qoCyiM5qon7lOF32vCKJslsOgyvKMNvteH7XpKPVBZVJlOjiVuU4Zerm2uSSUXS75FcjyX5TJTmT2LgWZPcwJwmnlr7EzwR81MXy45NmVSjMjyMTZSRRWW4q4HmdaG/j/sLnjLcrY18cV930Bv7FC8POJ+vKuLviuQngDWNLNSF9dU0slCniXucr2+en7pSGjgjnTaPiKc9Su+PlMn06PwBTfw+CD13hHNCcjsIKQ/Hxxd3RcpsTfZrymOXmx1Fh9Ul9mA8MVsbqZDFE7O1ingIexUcbnsgbM7xdCn5VqghOtrIjDL8FYcp9+pMpgYhRRKHyTllpBMjTE4qI7+0kae5FxK3uLzrKnYTmCJ5hREJYZqkN9g7fT7rIhRh1Lk9T9I7thrgPv/zzqBO8niO9hX+65UKEIYaCQzx0dThzSb7cJqK6RBlBzg612Crh+F7G52j8ZNMhnVeDoDWhyUg8mbdS9CioGNIf7UBasMDwLKuOcRM+gRiD1ZSfYBy03YXX5rXHCelFS9jPp+uNkDPyFnHeC6toQYTxhf0U6dyFmEHINvQRn5g5FuXq5gDgwPYtn0Aqn8yxNyyfQ5J1JUZbeRh1QESP9pQZqxzqC/iqWoDVMTT2sjrDROa+IFFnpeTVQ6gMqlGyweI726YhG51ZKG7WgC1o1xRP3UoywKeAOUJy6RVCQAtsyZZUkbGsi6CqHZHvGerASqSO+70nsu5EEIJlB80fKsof4zmDoLyK8OJvIuh+CGqoVsrITf/Nj24VK9JPmji5b3JtIoUYpCAjn49q7jsNDxs90pKa1E/hph2R36oEl9SDy7Vr9736GT6VjgnABl0mJkwOZkr52xY4TssuD/DjZy0upWkF+orrK/4+OIunNbAFy8XHdasjv0FD6I6uBe00rAHAidSXIdAEV5yzSBR8IEoxhSlLkC3rt6gquCGdUD70g6aBC5nByiTL+1o/La3rt24vshb58ph0K2QhppkMt8VMBQaeivyruLAsubVcznmSG8bhn32pXkr6mjV7Td/F5YlR3ZiQAAAAABJRU5ErkJggg==">
+                        </div>
+
+                        <a style="    padding-top: 2%;
+                        padding-left: 1%;" href="#">read more</a>
+                        <div class="box">
+                            <span class="anime">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[330px] card  mt-[3%]">
+                    <div class="flex gap-4">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAALgElEQVR4nO1bC5AcRRkeiAq+3yIactu9d4ARgsjDVwkSLCnEZylKQEGrUEp8PzDEoEYRUVIVglWCwQKLBDQcogWxghRl3W333iVoEJAoSdQ87vb/5xJChJAYIpes9fVjtnduZveyu5eEhL9qKpvpmen+u//n9/8XRR2io/voNVLRMqHpS9HBSLJ/uEdqrgpFW7uXb35ZdLDR1JUrXyA1r8YmSE1fiw4aqlYPFWW6QGpaa5k3UvAv3I8OdJpSioVQ1OcZl5r+JjQP4XehXPlQdCCTUPwp6LtjnKXmi3DqUtNXjRRo+lN0wIq85p8k4q75N8feX3m1H4YB9Bsj1PC0qLc6qVDi04Ti2ULz74WiR6TmLVLTqFS0y/xW/KhUfLfQNEeW4uknrag+P9ovqbc6SWpa5PT8f0XNn896TGi+zj2zUijaWFORcV6KHxeaF3QN0LHRfnXyim5xjD1ZLMdnZD2GRUvF9zZhcofU/N2pfRtfMnlw6FWQFKH441LTPNiR2kbQLqF4cVHHb472NUnFV3s/XyxV3pke71665jCohtD0TP1p0u3FEr1VKnoX3COkIhhfjbH0t7r6+U1C8Xyh6SkvbVLx907vqz4v2hckNZ0vFe02Yp9x8vAGUvFDNTfIFaH4G/53nU5Xq4fIMr/fxwxC89MFHX8i/c2ucuUtUIVwM4Wiv2CuvcByjbr64kJi7RV/IUpRsVx5h1C8OdDf/xb08Alg1Bk8eInz0+8dU37spVLxbV7UC4o+58e6+ysnCs2PuXd7IXFJnKGY5EB8XLRXqFo9BO7MndSv08NYGOxByoD92I+LEl3smFieNwVE2z0zKkr8MVmKz/GiLzUt8dLT1bfuFfAUbp4tsswnTyDngejbExoJXR2oODjU7U9eaLrHujQanVLadKR/ZvLg0Av9M1165O1RDnm3CnUw7tGK+y0Ir8PnsBlS02+9JBxV3vCGaKKoe+maw4Lw9qJwzDLmjRn9oajoI46BgfR3IBE+XmikZtjkILb4KaQv61mzCYkk0HKss0Ms15PUfIlb0MPpuF4ovtYtdI28b8vLhaZZbkHzUp+JuvuGJ8N44sLvcAxW3RpL2pYydjdEDcioQ80mfD/qOFWNATMnLHR8bjgEn23FlEaLmk8y9zQvwLNFRV/O+hxOP20fpOazpeIH69xlOT5DKN4JdYJxbbREqJRzuTu6yxuLnWM+iqKC4tMzXZhhhu5xp/+zMQxmWHsQmHHf21wo0VlCczlgfD0MX/ItRT90m/VQs3VCUpzELI06SVLT9e7DV449fcPoNkRwwfO9jpkZWd+DzQjTZWc4NwnN38RY+GxX37rDoXZS8apm64QRhNs13+yYV6iajA7ZXdX486yN0XxdeF9ovtncL9HFyc3e6iShK+8Vmn5V5yoV7Zaar0AYnLcE2IasqM/gDgi4+od7knuK5zuJuakT7EfBKa+tG0AEhyBEc7Vb8dScMPkGoeMvCsW/sxlfGP/Tcp8YYWNaWlvNXd6czF3mk31Knuc5WrT+tKhu8gE+xecCUtNMMA1JQIpr9Dg76VltUlx3YkLRd3yA02wdJknSvEIq+ra/B2PnUugd8D7BxqwxB9NfObETG/BLp6N16G5t8fkXAhkYRKhCVsxukWPejueanVZhgLsMs4q3h0EYXK3Q/MCRK+hF6fRbarq87Q0QSehbL6ZS00I3yR0u65sDIyZV5TyAGHBJ8PWI8RsyVuLTQqsffP9HQvFgeLIIspz3+Hqjb8pS/BlnB26L2iWh6d/Gpw8OdddNomiZNXTxqdnvWdcmdOWDrcybRHel+LLkmwN8CgDWYok+3OhdkzlaA7uslbnrSGp6wuhTCtv32VlX38bX17/hx2lOlofINbSKV4VBlkuRLaK8hySWjRzhc5aoXZIWrammY2zvyvJACQtimLT5imZzIBhKmPVhNtyv4ruQ7GS+1FudlPc9k1q7LDFql6TLxtITenDiiHvjF+e+nFMLEIruBHMhs0LxP02sUaKzmq7JpMy0LQ8HcEUZE2mOg8Umk2n+Dz42RW94ZR0Tmja5GOC1rdoViHntXnwu1ED2jxzf9H0X7EDNssaRgndQBciErD16RNbf54ftLg9Pa/L+R8EwDFhyrxRf5qz0Xa2sSaj4A86+lDPHS/GpzkPdH7VLUrF21nh66v6txjtovrDxYi0WCBeWvIuUWfEgEp0x85Xic6SqnNnom9Bxk1JresZkjJAeAKyaZtnokO5wcy5sjeuAfGqbDoQQZDg9u9bfQzAiNP81xAEQtCB4cQjRlKgRWVuwEwlNlmpBCoEVAhq3aFGzQIxmRe2SVPSVrOTCBDD2/qrwZI3XULQrzMkRviKMTduRzPk0LXEbO9v8v3+4R2j6gTeSYy5F602FCdGfyUFoZgLadiIjLOjhExyjGzJOq+LUwAAhYSaIxbQyHyJO5xI3+mAruLbAg9gEy+b+IagCQmLm7lNHkqHIokEma0uXphIoTPH8usYIUxMYC4bkpbWekBIjbnApsofDnjSbChsUuGKU4bIkE8DMeGC0PSKp+KYsQMRIBxareHuI/jb4ziqUugByhPdhOwqav1XD/pOUeW0aIAmr0W7zF6eTK7OmcbjTcZMo07sTNRgLiC52i/15s+94zC+0/salKd5Q02nWDiYzm5GHBRYUfzqd8GANaY/TwYIIr8kCRY2RcihvXmIUApeuwLkT7gvAZ5A6PxBGgVLzVY3gc7i9UNQtPkGjxjVORPG06HXOwuJ1xkUqmutFNkxfcxZ+fcpVPWXS21So3TM49MY8+DyV888ELI48wnmFuWMm7UR7zlTE105UoX/hGJBik7tbkbw7t6HBSlLSTCE1xQA68ubMgs89eQ+B1BgosD+cdNKGQiskDvhh1C4VNV/oXVSIApuxUuWopDSm6M70JtgEJQFRRn0gA2Spocq4pCY0hpAIiw7RrhosT5vSqJNBiT0WmYNQt+IS+9yp3JoeRjwQVHGX+MDHMe/QHNqKJMgmPwbPaxixATxNI8xC0zUpb/FEQcVvy1irkQysuTMxQRRFhXLlmFq1li8Zs+CB+DiItlvYOlfK7vWnFELrBnB1myA135h2j+YZRTMcE4+ACdNc4TCKJGDKiPgQLPkNT6NZHasSC81P5zVIJDah5t4eT9cVLIOV80z8bzfo7+mky9kXE3EazNHVKLznyMovkIF6HCOvOtU2CZ+TK9qa6f5QCEEnGNpZatZ+fhaIAdWpdZUaff0zmEVJzowF7tLNCe9wZbpcbpgvxdO9hMDgRhNGVVMxMh1iBjfMSWGNSoCBmqhDGh41NYQyXQAAE1Gka66eG4p3zvVHoSpHZ86l+eygV3HRhHennm7L2SYSNK4mLIWlCHmEUPSLuvaZcV8U+/aaTJDVGDyeXdtkWtQIM5yItplrAvG9HYFJ3uPQ6aKO32NwPQt6/sM2RyKnsI2SYNaW0+hy04EGaesfOd6rXIhQy4H4daYaVZOuqztm8feEEJvXip4US1X5bKdF0BdpEAZD/51RNLA9/i2WK5+M9iX16BGZQGj2NB6Ele9UPx8arp0aDNcZTc337fV2uVwyVWOa4bvEnVqsh9VuJ0V1KnBVHVYAdLkjEd4EUFffusOB35nG5xSEhZBYKL60UKb3IZtExOilBMmUrfpWzrTBDC2sS5dr0rUqyw3uf1StHmqRW17gawmtXBaVMplkzdUFjRHPDqrCXQ1PQ/OUQZsVK1MzqIXWGYzzpSZ4Ciw7EGpEmulexWc1Scdw3v8PeJLPbQA/JwHyQFCByegbhvtSrNux+nt8mf5AhNU0Ly9ZmnASpoUlp4S1Fy/XZT5zrzJfsCU000uAAil6/VvpHWhL8mzr3o1JVjghjdNNurXxhxT77G95HKFd3/5dEe3G7wmfULrS2X56bWlWq2ibBIqkQZKyf13NizUh/R+Wa/pzo9PuDQAAAABJRU5ErkJggg==">
+                        <h3 style="font-size: 29px;
+                        padding-top: 2%;
+                        font-family: Signika Negative, sans-serif ;
+                    ">
+                            <a href="#">Geography</a>
+                        </h3>
+
+                    </div>
+                    <div>
+                        <p style="color: gray; font-size: 16px; font-family:Signika Negative, sans-serif ;">Lorem ipsum
+                            dolor si amet, dusino situ sint pertinac
+                            constituto, mir es dignsius quo
+                            great.Lorem Ipsum is simply dummy text of the printing</p>
+                    </div>
+                    <div class="flex">
+                        <div class="plus">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADfElEQVR4nN1Yy05UQRAdVixEcefOme47YIIxvvD1A2qMmiAmLlzgSvEDTEhwxSMxPlgg/spERR7TdUWIJgqKRDYmMlUDEQlqTHTDmNO3CSLM684MI1bSyc3tnuozt6qrzulI5H+36MjH3SqZPq6MXNbJ9DUMPOMd5qoCyiM5qon7lOF32vCKJslsOgyvKMNvteH7XpKPVBZVJlOjiVuU4Zerm2uSSUXS75FcjyX5TJTmT2LgWZPcwJwmnlr7EzwR81MXy45NmVSjMjyMTZSRRWW4q4HmdaG/j/sLnjLcrY18cV930Bv7FC8POJ+vKuLviuQngDWNLNSF9dU0slCniXucr2+en7pSGjgjnTaPiKc9Su+PlMn06PwBTfw+CD13hHNCcjsIKQ/Hxxd3RcpsTfZrymOXmx1Fh9Ul9mA8MVsbqZDFE7O1ingIexUcbnsgbM7xdCn5VqghOtrIjDL8FYcp9+pMpgYhRRKHyTllpBMjTE4qI7+0kae5FxK3uLzrKnYTmCJ5hREJYZqkN9g7fT7rIhRh1Lk9T9I7thrgPv/zzqBO8niO9hX+65UKEIYaCQzx0dThzSb7cJqK6RBlBzg612Crh+F7G52j8ZNMhnVeDoDWhyUg8mbdS9CioGNIf7UBasMDwLKuOcRM+gRiD1ZSfYBy03YXX5rXHCelFS9jPp+uNkDPyFnHeC6toQYTxhf0U6dyFmEHINvQRn5g5FuXq5gDgwPYtn0Aqn8yxNyyfQ5J1JUZbeRh1QESP9pQZqxzqC/iqWoDVMTT2sjrDROa+IFFnpeTVQ6gMqlGyweI726YhG51ZKG7WgC1o1xRP3UoywKeAOUJy6RVCQAtsyZZUkbGsi6CqHZHvGerASqSO+70nsu5EEIJlB80fKsof4zmDoLyK8OJvIuh+CGqoVsrITf/Nj24VK9JPmji5b3JtIoUYpCAjn49q7jsNDxs90pKa1E/hph2R36oEl9SDy7Vr9736GT6VjgnABl0mJkwOZkr52xY4TssuD/DjZy0upWkF+orrK/4+OIunNbAFy8XHdasjv0FD6I6uBe00rAHAidSXIdAEV5yzSBR8IEoxhSlLkC3rt6gquCGdUD70g6aBC5nByiTL+1o/La3rt24vshb58ph0K2QhppkMt8VMBQaeivyruLAsubVcznmSG8bhn32pXkr6mjV7Td/F5YlR3ZiQAAAAABJRU5ErkJggg==">
+                        </div>
+
+                        <a style="    padding-top: 2%;
+                        padding-left: 1%;" href="#">read more</a>
+                    </div>
+                    <div class="box">
+                        <span class="anime">
+
+                        </span>
+                    </div>
+                </div>
+                <div class="w-[330px]  card mt-[3%]">
+                    <div class="flex gap-4">
+
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpElEQVR4nO2ZTW/TQBCGVypfBa5QCpRkp4VDD7QSRwRB/CdEgX8UuFFVcIoyk5a2SUG0lZC4IJrMukUqB1RAQiCjSe3EMrEaO2Cvi0daZeX1bPbxO7uzXitVWE5sut6ZAuJnGvkLkHFtKioWBJr9rAcMo4KIEodOXC3V9i4pSwzigvjhZBOEWAJFYjrkCQQsmA9QgIwYbrDsXNRkGhq5KfVYvvSPFRm2jxk0F4B4sxcmaN5dq3+aTHMMatROukogb8n98husD6sMpA2iySwDGgpdawUHHgJrHuWfCYgMAtBgUpBB/qmCRD3JpKEV7g/SAol6kr2BYeeGRv7h+0ldrkX+Z6g/sGGyX13ZGQc0b8LJTZN5LW1pjGGkTqbJuSdzoK8EP5cld6rx8TIQL/rKAPJ6GU3FSpBSozMPZL4H8sa+frU74bdLHZB3A+3fytSeswqk1OjMazIbngoPJ1t8dmbp/ek/7qt9OCNtQLzghdpGFAykDSLh1FeCNys198RR/cs9vawvygwIM0g9Ico+6hBiYRiIIIwmfuT5rmUOAsQHcn3ipXNOxbTZ2t55D+QgexDk9SSK3Gq5JzXyY893NXOQMpqKxHncOeJne/HVDb6TOYiYrDz+qiVxLyuTqrpjKmxVd0zafCVkT6axfdOqPFKm9lxfmW75HDy8GJRHoiAyz+zlurkrK1Agsy9eX9m5IkUjL/UyO/HqoHAKWrHX+pvb+CS7Xyu38ZDgfSTzbbwuXnUtedU9dqcocc614hyKgy0gAWWactpo3UkjpFxUAaKO+fcRGwz+exAgfgpovmY10WGIBWAoCW0tKjZI3Xkw6HwqN6a9z9PdV1aLDBIo8kIcNJons9vbp1RuQZBvA/Kv3M8RMag794HMWyD+mWuQwlQ29huzGkyH4FgmHgAAAABJRU5ErkJggg==">
+                        <h3 style="font-size: 29px;
+                        padding-top: 2%;
+                        font-family: Signika Negative, sans-serif ;
+                    ">
+                            <a href="#">Arabic</a>
+                        </h3>
+
+                    </div>
+                    <div>
+                        <p style="color: gray; font-size: 16px; font-family:Signika Negative, sans-serif ;">Lorem ipsum
+                            dolor si amet, dusino situ sint pertinac
+                            constituto, mir es dignsius quo
+                            great.Lorem Ipsum is simply dummy text of the printing</p>
+                    </div>
+                    <div class="flex">
+                        <div class="plus">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADfElEQVR4nN1Yy05UQRAdVixEcefOme47YIIxvvD1A2qMmiAmLlzgSvEDTEhwxSMxPlgg/spERR7TdUWIJgqKRDYmMlUDEQlqTHTDmNO3CSLM684MI1bSyc3tnuozt6qrzulI5H+36MjH3SqZPq6MXNbJ9DUMPOMd5qoCyiM5qon7lOF32vCKJslsOgyvKMNvteH7XpKPVBZVJlOjiVuU4Zerm2uSSUXS75FcjyX5TJTmT2LgWZPcwJwmnlr7EzwR81MXy45NmVSjMjyMTZSRRWW4q4HmdaG/j/sLnjLcrY18cV930Bv7FC8POJ+vKuLviuQngDWNLNSF9dU0slCniXucr2+en7pSGjgjnTaPiKc9Su+PlMn06PwBTfw+CD13hHNCcjsIKQ/Hxxd3RcpsTfZrymOXmx1Fh9Ul9mA8MVsbqZDFE7O1ingIexUcbnsgbM7xdCn5VqghOtrIjDL8FYcp9+pMpgYhRRKHyTllpBMjTE4qI7+0kae5FxK3uLzrKnYTmCJ5hREJYZqkN9g7fT7rIhRh1Lk9T9I7thrgPv/zzqBO8niO9hX+65UKEIYaCQzx0dThzSb7cJqK6RBlBzg612Crh+F7G52j8ZNMhnVeDoDWhyUg8mbdS9CioGNIf7UBasMDwLKuOcRM+gRiD1ZSfYBy03YXX5rXHCelFS9jPp+uNkDPyFnHeC6toQYTxhf0U6dyFmEHINvQRn5g5FuXq5gDgwPYtn0Aqn8yxNyyfQ5J1JUZbeRh1QESP9pQZqxzqC/iqWoDVMTT2sjrDROa+IFFnpeTVQ6gMqlGyweI726YhG51ZKG7WgC1o1xRP3UoywKeAOUJy6RVCQAtsyZZUkbGsi6CqHZHvGerASqSO+70nsu5EEIJlB80fKsof4zmDoLyK8OJvIuh+CGqoVsrITf/Nj24VK9JPmji5b3JtIoUYpCAjn49q7jsNDxs90pKa1E/hph2R36oEl9SDy7Vr9736GT6VjgnABl0mJkwOZkr52xY4TssuD/DjZy0upWkF+orrK/4+OIunNbAFy8XHdasjv0FD6I6uBe00rAHAidSXIdAEV5yzSBR8IEoxhSlLkC3rt6gquCGdUD70g6aBC5nByiTL+1o/La3rt24vshb58ph0K2QhppkMt8VMBQaeivyruLAsubVcznmSG8bhn32pXkr6mjV7Td/F5YlR3ZiQAAAAABJRU5ErkJggg==">
+                        </div>
+
+                        <a style="    padding-top: 2%;
+                        padding-left: 1%;" href="#">read more</a>
+                    </div>
+                    <div class="box">
+                        <span class="anime">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="w-full  h-[50%] lg:h-[388px] " style="background: linear-gradient(rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.6)),
+    /* bottom, image */
+    url(image/video-2.jpg);;
+    background-size: cover;">
+
+        <div class="flex flex-row w-full lg:relative md:flex-col sm:flex-col mobile:flex-col ">
+            <div class="flex flex-col lg:w-1/2 md:w-full sm:w-ful mobile:w-full " style="align-items: center;">
+                <div class="lg:w-3/5 md:w-4/5 sm:w-4/5 lg:pt-[11%] md:pt-[4%] sm:pt-[4%] mobile:w-4/5 mobile:pt-[4%] ">
+                    <span
+                        style="color: #20ad96; font-weight: 800; font-size: 19px;       font-family: Signika Negative, sans-serif;">Get
+                        To Know
+                        Us</span>
+                    <h3 style="color: white; font-family: Signika Negative, sans-serif;
+                
+    font-size: 35px;
+  
+    font-weight: 800;">
+                        We Can Help You To Achieve Your Business Goal
+
+                    </h3>
+                    <div style="    padding-top: 2%;
+                        text-align: center;
+                        height: 46px;
+                        width: 164px;
+                    
+                        border-radius: 6%;">
+                        <button href="#" class="uppercase btn-custom" style="color: white;
+                            font-size: 14px;  font-family: Signika Negative, sans-serif; ">
+                            <a> discover more</a>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class=" lg:absolute lg:bottom-[-6%] lg:left-[49%] lg:m-0 md:ml-[19%]  md:mt-[6%] sm:mt-[6%] sm:ml-[19%] lg:w-[42%] md:w-[60%] mobile:w-full sm:w-[60%] flex justify-center bg-white"
+                style="  
+                height: 437px;
+            
+          
+            ">
+                <div class="flex flex-col w-3/4">
+                    <div style="
+                        height: 50%;">
+                        <span style="font-size: 21px;
+                            color: #20ad96;
+                            font-family: Signika Negative, sans-serif;
+                            font-weight: 400;
+                        ">
+                            Our Skills
+                        </span>
+                        <h2 style="  font-family: Signika Negative, sans-serif;
+                            font-weight: 800;
+                            font-size: 42px;">Great Teaching Skills</h2>
+                        <p style="    font-size: 19px;
+                            color: gray;
+                        ">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                        </p>
+                    </div>
+                    <div style=" height: 50%; ">
+                        <div class="progress-bars">
+                            <div class="sigma_progress">
+                                <h6>Social Studies</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 70%;">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="sigma_progress-count" style="left: 70%;">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                            <div class="sigma_progress">
+                                <h6>Science</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 85%;">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="sigma_progress-count" style="left: 85%;">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                            <div class="sigma_progress">
+                                <h6>Maths</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 55%;">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="sigma_progress-count" style="left: 55%;">
+                                    <span>55%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="flex flex-col items-center w-full h-auto lg:mb-0 mobile:mb-[16%]">
+        <div class="w-4/5 h-[229px] float-start pt-[5%]">
+            <h2 class="text-[41px]" style="
+              
+                font-family:Rowdies, sans-serif ">Trending Articles</h2>
+            <p class="pt-[1%] text-gray " style="color: gray;">Orientation Program For The New Students</p>
+        </div>
+        <div class="w-5/6 post-thumbnail ">
+            <a><img src="image/1.jpg" alt="" class="rounded-md gi"></a>
+            <div class="post-meta">
+                <span>April 26, 2024</span>
+                <span>Posted by Jonathan Pick</span>
+            </div>
+        </div>
+        <div style="margin-right: 77%;">
+            <a class="button-tr" href="#">Physics</a>
+        </div>
+        <div class="w-[83%]">
+            <div class="w-full h-[130px] pt-[2%]">
+                <h2 style="font-family:Rowdies, sans-serif ;font-size: 21px;">Enrolling New Members Into The Library
+                </h2>
+                <p style="color: gray;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled</p>
+            </div>
+            <div class="grid w-full ">
+                <div class="grid w-full lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1  gap-[3%]">
+                    <div>
+                        <div class="post-thumbnail ">
+                            <img src="image/5.jpg" alt="" class="rounded-md ">
+
+                            <div class="post-meta">
+                                <span>April 26, 2024</span>
+                                <span>Posted by Jonathan Pick</span>
+                            </div>
+                        </div>
+                        <div class="pt-[2%] button-tr"><a href="#">English</a></div>
+                        <div class="pt-[3%]">
+                            <h3 style="font-family:Rowdies, sans-serif ;">Behavioral Science - BS</h3>
+                            <p style="color: gray;">Some quick example text to build on the card title and make up
+                                the
+                                bulk of the card's content...</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="post-thumbnail">
+                                <img src="image/4.jpg" alt="" class="rounded-md ">
+                                <div class="post-meta">
+                                    <span>April 26, 2024</span>
+                                    <span>Posted by Jonathan Pick</span>
+                                </div>
+                            </div>
+                            <div class="pt-[2%] button-tr"><a href="#">Lunch</a></div>
+                            <div class="pt-[3%]">
+                                <h3 style="font-family:Rowdies, sans-serif ;font-size: 21px;">Keypoints For
+                                    Improving
+                                    Focus</h3>
+                                <p style="color: gray;">Some quick example text to build on the card title and make
+                                    up
+                                    the bulk of the card's content...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid gap-[4%] lg:grid-cols-5  md:grid-cols-2  pt-[3%]">
+                    <div class="col-span-3">
+                        <div>
+                            <div class="post-thumbnail">
+                                <img src="image/3.jpg" alt="" class="rounded-md">
+
+                                <div class="post-meta">
+                                    <span>April 26, 2024</span>
+                                    <span>Posted by Jonathan Pick</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-row pt-[2%]">
+                                <div>
+                                    <a href="#" class="button-tr">Physics</a>
+                                </div>
+                                <div><a href="#" class="button-tr">How-to</a></div>
+
+                            </div>
+                            <div class="pt-[3%]">
+                                <h3 style="font-family:Rowdies, sans-serif ;font-size: 21px;">Best Education
+                                    Channels On
+                                    YouTube</h3>
+                                <p style="color: gray;">Some quick example text to build on the card title and make
+                                    up
+                                    the bulk of the card's content...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <div>
+                            <div class="post-thumbnail">
+                                <img src="image/8.jpg" alt="" class="rounded-md">
+                                <div class="post-meta">
+                                    <span>April 26, 2024</span>
+                                    <span>Posted by Jonathan Pick</span>
+                                </div>
+                            </div>
+                            <div class="pt-[2%]  button-tr"><a href="#">Englih</a></div>
+                            <div class="pt-[3%]">
+                                <h3 style="font-family:Rowdies, sans-serif ; font-size: 21px;">Oat Jawa With
+                                    Strawberry
+                                    and Blueberry
+                                </h3>
+                                <p style="color: gray;">Some quick example text to build on the card title and make
+                                    up
+                                    the bulk of the card's content...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div style="background: url(image/2.jpg); width: 100%; height: 600px;  background-size: cover;">
+        <div style="    text-align: center;
+            padding-top: 5%;">
+            <h2 style="    font-weight: 500;
+                font-size: 47px;
+                
+            font-family: Signika Negative, sans-serif;">Testimonials</h2>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper lg:w-[42%] lg:h-[79%] mobile:w-full mobile:h-[60%]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-[170px] text-center text-[18px]  justify-center items-center "
+                    style="display: flex; height: 170px; ">
+
+                    <div class="ct-testimonial-item slick-slide slick-current slick-active" data-slick-index="1"
+                        aria-hidden="false" tabindex="0" style="width: 1110px;">
+                        <div class="ct-testimonial-item-inner" style="padding-top: 10%;">
+                            <div style="display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;">
+                                <img style="    padding-bottom: 2%;
+                                    width: 29px;
+                                    height: 53px;
+                                "
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAv0lEQVR4nO2SOwoCMRiE06qbmT82YWFbERHxOoJgoY1HstHCG4mK9/BZruwSUVmyBLTSDKT7Zv5XlIr6b5GcCZkTOLeTpOfjDDB33Elr3Q0KN8b0CVwKo4hMargBgWvJAeOg8CzLGgQ2zrT0cdbaFslDyZELFSoBVuXI5D5N06aPI7l2q9kWTQWFG2Dkwm8iMvz0Pm/SWncIHF2BqbeJwPtUu3rs3fPUk9uFcBXVmeTFGMrFAnlcUf71XxT1m7oD61G86jWyhW8AAAAASUVORK5CYII=">
+                                <span style="padding-bottom: 4%;
+                                     font-family: Signika Negative, sans-serif;
+                                     font-weight: 400;">Brian Fitness Educationz</span>
+                            </div>
+
+                            <p style="color: gray;">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide h-[170px] text-center text-[18px] flex justify-center items-center "
+                    style="display: flex; height: 170px; ">
+                    <div class="ct-testimonial-item slick-slide slick-current slick-active" data-slick-index="0"
+                        aria-hidden="false" tabindex="0" style="width: 1110px;">
+                        <div class="ct-testimonial-item-inner">
+                            <div style="display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;">
+                                <img style="padding-bottom: 2%;
+                                    width: 29px;
+                                    height: 53px;"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAv0lEQVR4nO2SOwoCMRiE06qbmT82YWFbERHxOoJgoY1HstHCG4mK9/BZruwSUVmyBLTSDKT7Zv5XlIr6b5GcCZkTOLeTpOfjDDB33Elr3Q0KN8b0CVwKo4hMargBgWvJAeOg8CzLGgQ2zrT0cdbaFslDyZELFSoBVuXI5D5N06aPI7l2q9kWTQWFG2Dkwm8iMvz0Pm/SWncIHF2BqbeJwPtUu3rs3fPUk9uFcBXVmeTFGMrFAnlcUf71XxT1m7oD61G86jWyhW8AAAAASUVORK5CYII=">
+                                <span style="padding-bottom: 4%;
+                                     font-family: Signika Negative, sans-serif;
+                                     font-weight: 400;">Johny White</span>
+                            </div>
+
+
+                            <p style="color: gray;">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next " style=" 
+color: black;
+
+               top: 74%;
+                left: 52%;    
+        opacity: 1.8;
+        cursor: pointer;
+        bottom: 179px;
+        border-radius: 38px;
+        height: 70px;
+        width: 70px;
+        border: 2px solid black;
+        opacity: 1.8;
+        cursor: pointer;
+        bottom: 179px;
+        bottom: 191px;
+        right: 2%;
+    ">
+            </div>
+            <div class="swiper-button-prev" style="top:74%;left:39%;   position: absolute;
+            height: 70px;
+            width: 70px;
+            color: black;
+            border: 2px solid black;
+            opacity: 1.8;
+            cursor: pointer;
+            bottom: 179px;
+            left: 33%;
+            border-radius: 38px;">
+
+            </div>
+        </div>
+    </div>
+    <div class="w-full h-auto">
+        <div class="flex flex-col h-auto">
+            <div class=" pt-[3%] text-center w-full h-[120px]">
+                <h2 style="  font-size: 38px; font-family:Rowdies, sans-serif  ">Hot Courses</h2>
+                <p class="subtitle" style="    width: 72%;
+                color:gray;
+            padding-top: 1%;
+                padding-left: 28%;
+            ">
+                    Want to see the what new recipes we are working on? Check out what the people have to say about
+                    them
+                </p>
+            </div>
+            <div class="grid h-auto lg:grid-cols-3 md:grid-cols-2 m-0 lg:m-0  mobile:mt-[25%]" style=" padding-top: 2%;     display: flex;
+                width: 100%;  
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4%;
+            ">
+                <div class="flex flex-col " style="background-color: #f7f4ee;
+                
+
+    margin-top: 3%;
+                    height: 413px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 17px;
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 3%;
+                 
+                    width: 348px;
+             
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" ;>
+                    <div>
+                        <img src="image/5.jpg" alt="">
+                    </div>
+                    <div style="border-bottom: 1px solid black; width: 88%; padding-left: 8%;">
+                        <h4>
+                            <a href="#  " style="font-family:Rowdies, sans-serif ;font-size: 15px;">Behavioral
+                                Science - BS </a>
+                        </h4>
+                        <p style="color: gray;">Some quick example text to build on the card title and make up the
+                            bulk of the card's
+                            content...</p>
+                    </div>
+                    <div style="  display: flex;
+                     
+                        height: 22px;
+                        gap: 40%;
+     
+    width: 95%;
+    padding-left: 3%;
+                        " class="recipe-meta">
+                        <div class="recipe-difficulty">
+                            <div class="recipe-difficulty-inner">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span style="color: gray;">Home Tutor</span>
+                        </div>
+                        <div class="recipe-steps">
+                            <img style="    width: 18px;
+                                position: absolute;
+                                left: 65%;
+                                bottom: 7%;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR4nO1bv2sUQRQeI/irEARRbBVFxVKx08pfGMuAhdFCiAjuvL273L5vg2Gu8WcliIVCRBD/ATsR7OwEW8FoaSNGJVqYaCLvkguT293LZbMJN5v54HF3ezv39nvz5puZvbdKeXh4eHh4OAuKojME8FIWAKdV2UBRdI6AGQJmu7CZADirygJjzCYNfOiSfNM080dpp8oAYq4vh7xloXIdtVptlwZ+5AmAZv5erVZ3KpehgbEEOebfGhgNgb2S5vIqn+V4yrmPlKsI6/WjmvlfO3kCjqedL8fbg6CZp3UcH1EOYgMBbxNpDYx2atTMhGSb1115DIzZTsw3CXingV85hWd54xT4pOv1/QkiUXQx7XxJ944chof3Zfjp70he0kczf1kL0iliVUtcD/OztHOXmtqCINic6of5YWajG3F8MK/SFmDja5EBIfP57N5nfmOlyjcdx1fDkZE9qiQaQMyvMhtQFB2yUnFaA8dUiWYBAqaCOD6c6UQDQ1Z0XyqH1gGS7qIJ8pq5DgAedHRAc6rfyoDbqseg43g3Mf/MJa7A1+vAjo4OiLlhRbahehABMJxLYKPo2pI/Tg4EIOdu8P3AwMDGUgQgx/2Av8R8QnUDciQAAh1Fpwi4pYG7WSbfB3F8susfJYcCsCogHwD2GUB+CMB5DTDG9AXAoJi8X3caQMyXWzwkCOsxAI1cPMgHgH0GkB8C8BpAXgThZwHy0yD7dYByFH4hxH4l2PBLYfi9wKzfDMHvBmf9dpj9/YDG6i8gegy5eQTAoPV/2iXlKHLzMMb0SQOxZd1N7TGUhYfHqqIKHCDmz7mKDZI2Rcz3Vuojs04QuN/0UcC1LvjQzCMFkW+p7WQR1RwZdYKThV4rEC+eKlYaVeY/BNxJzQBgfMV1gvJ//5yPojqrIRlQsw4+ViWHZn5idVhFhcwX7MhLWakqKa4Ys8XWolAqRYeM2SYPEVjiMFbGIMyTf2p19kSlUtna/LJtGDQVUoZDN09juWDNtE/OQosenZEa3BcFK2wv23PhrNogQajaw6GENjHf8wnyqgXRBBFGUchOpWdO2RyX/oUxb+E/pvvDuv7kfEwAAAAASUVORK5CYII=">
+                            <span style="color: gray;"> 24 Classes</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="flex flex-col " style="background-color: #f7f4ee;
+                 margin-top: 3%;
+                    height: 413px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 17px;
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 3%;
+                 
+                    width: 348px;
+             
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" ;>
+                    <div>
+                        <img src="image/3.jpg" alt="">
+                    </div>
+                    <div style="border-bottom: 1px solid black; width: 88%; padding-left: 8%;">
+                        <h4>
+                            <a href="#  " style="font-family:Rowdies, sans-serif ;font-size: 15px;">Behavioral
+                                Science - BS</a>
+                        </h4>
+                        <p style="color: gray;">Some quick example text to build on the card title and make up the
+                            bulk of the card's
+                            content...</p>
+                    </div>
+                    <div style="  display: flex;
+                     
+                        height: 22px;
+                        gap: 40%;
+     
+    width: 95%;
+    padding-left: 3%;
+                        " class="recipe-meta">
+                        <div class="recipe-difficulty">
+                            <div class="recipe-difficulty-inner">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                            </div>
+                            <span>Home Tutor</span>
+                        </div>
+                        <div class="recipe-steps">
+                            <img style="    width: 18px;
+                                position: absolute;
+                                left: 65%;
+                                bottom: 7%;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR4nO1bv2sUQRQeI/irEARRbBVFxVKx08pfGMuAhdFCiAjuvL273L5vg2Gu8WcliIVCRBD/ATsR7OwEW8FoaSNGJVqYaCLvkguT293LZbMJN5v54HF3ezv39nvz5puZvbdKeXh4eHh4OAuKojME8FIWAKdV2UBRdI6AGQJmu7CZADirygJjzCYNfOiSfNM080dpp8oAYq4vh7xloXIdtVptlwZ+5AmAZv5erVZ3KpehgbEEOebfGhgNgb2S5vIqn+V4yrmPlKsI6/WjmvlfO3kCjqedL8fbg6CZp3UcH1EOYgMBbxNpDYx2atTMhGSb1115DIzZTsw3CXingV85hWd54xT4pOv1/QkiUXQx7XxJ944chof3Zfjp70he0kczf1kL0iliVUtcD/OztHOXmtqCINic6of5YWajG3F8MK/SFmDja5EBIfP57N5nfmOlyjcdx1fDkZE9qiQaQMyvMhtQFB2yUnFaA8dUiWYBAqaCOD6c6UQDQ1Z0XyqH1gGS7qIJ8pq5DgAedHRAc6rfyoDbqseg43g3Mf/MJa7A1+vAjo4OiLlhRbahehABMJxLYKPo2pI/Tg4EIOdu8P3AwMDGUgQgx/2Av8R8QnUDciQAAh1Fpwi4pYG7WSbfB3F8susfJYcCsCogHwD2GUB+CMB5DTDG9AXAoJi8X3caQMyXWzwkCOsxAI1cPMgHgH0GkB8C8BpAXgThZwHy0yD7dYByFH4hxH4l2PBLYfi9wKzfDMHvBmf9dpj9/YDG6i8gegy5eQTAoPV/2iXlKHLzMMb0SQOxZd1N7TGUhYfHqqIKHCDmz7mKDZI2Rcz3Vuojs04QuN/0UcC1LvjQzCMFkW+p7WQR1RwZdYKThV4rEC+eKlYaVeY/BNxJzQBgfMV1gvJ//5yPojqrIRlQsw4+ViWHZn5idVhFhcwX7MhLWakqKa4Ys8XWolAqRYeM2SYPEVjiMFbGIMyTf2p19kSlUtna/LJtGDQVUoZDN09juWDNtE/OQosenZEa3BcFK2wv23PhrNogQajaw6GENjHf8wnyqgXRBBFGUchOpWdO2RyX/oUxb+E/pvvDuv7kfEwAAAAASUVORK5CYII=">
+                            <span style="color: gray;">
+
+                                47 Classes</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="flex flex-col " style="background-color: #f7f4ee;
+                 margin-top: 3%;
+                    height: 413px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 17px;
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 3%;
+                 
+                    width: 348px;
+             
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" ;>
+                    <div>
+                        <img src="image/4.jpg" alt="">
+                    </div>
+                    <div style="border-bottom: 1px solid black; width: 88%; padding-left: 8%;">
+                        <h4>
+                            <a href="#  ">Behavioral Science - BS </a>
+                        </h4>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's
+                            content...</p>
+                    </div>
+                    <div style="  display: flex;
+                     
+                        height: 22px;
+                        gap: 40%;
+     
+    width: 95%;
+    padding-left: 3%;
+                        " class="recipe-meta">
+                        <div class="recipe-difficulty">
+                            <div class="recipe-difficulty-inner">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span style="color: gray;">Home Tutor</span>
+                        </div>
+                        <div class="recipe-steps">
+
+                            <img style="    width: 18px;
+                                position: absolute;
+                                left: 65%;
+                                bottom: 7%;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR4nO1bv2sUQRQeI/irEARRbBVFxVKx08pfGMuAhdFCiAjuvL273L5vg2Gu8WcliIVCRBD/ATsR7OwEW8FoaSNGJVqYaCLvkguT293LZbMJN5v54HF3ezv39nvz5puZvbdKeXh4eHh4OAuKojME8FIWAKdV2UBRdI6AGQJmu7CZADirygJjzCYNfOiSfNM080dpp8oAYq4vh7xloXIdtVptlwZ+5AmAZv5erVZ3KpehgbEEOebfGhgNgb2S5vIqn+V4yrmPlKsI6/WjmvlfO3kCjqedL8fbg6CZp3UcH1EOYgMBbxNpDYx2atTMhGSb1115DIzZTsw3CXingV85hWd54xT4pOv1/QkiUXQx7XxJ944chof3Zfjp70he0kczf1kL0iliVUtcD/OztHOXmtqCINic6of5YWajG3F8MK/SFmDja5EBIfP57N5nfmOlyjcdx1fDkZE9qiQaQMyvMhtQFB2yUnFaA8dUiWYBAqaCOD6c6UQDQ1Z0XyqH1gGS7qIJ8pq5DgAedHRAc6rfyoDbqseg43g3Mf/MJa7A1+vAjo4OiLlhRbahehABMJxLYKPo2pI/Tg4EIOdu8P3AwMDGUgQgx/2Av8R8QnUDciQAAh1Fpwi4pYG7WSbfB3F8susfJYcCsCogHwD2GUB+CMB5DTDG9AXAoJi8X3caQMyXWzwkCOsxAI1cPMgHgH0GkB8C8BpAXgThZwHy0yD7dYByFH4hxH4l2PBLYfi9wKzfDMHvBmf9dpj9/YDG6i8gegy5eQTAoPV/2iXlKHLzMMb0SQOxZd1N7TGUhYfHqqIKHCDmz7mKDZI2Rcz3Vuojs04QuN/0UcC1LvjQzCMFkW+p7WQR1RwZdYKThV4rEC+eKlYaVeY/BNxJzQBgfMV1gvJ//5yPojqrIRlQsw4+ViWHZn5idVhFhcwX7MhLWakqKa4Ys8XWolAqRYeM2SYPEVjiMFbGIMyTf2p19kSlUtna/LJtGDQVUoZDN09juWDNtE/OQosenZEa3BcFK2wv23PhrNogQajaw6GENjHf8wnyqgXRBBFGUchOpWdO2RyX/oUxb+E/pvvDuv7kfEwAAAAASUVORK5CYII=">
+                            <span style="color: gray;">13 Classes</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="w-full h-[800px] flex-col flex">
+        <div class="flex justify-center flex-col w-full h-[300px]">
+            <div class="w-full text-center">
+                <img style="padding-left: 48%;"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADg0lEQVR4nO1YS08UQRAeTVSMHlUuut27QQ6oJ/+C6FExEbwrPqNX5OQF8GBI3AhVO3pAESMP/4GExQNM1YYYY0xEfoZR0ABZUz29ZN1n72MWD1TSyWa7u/qbrqqvqtrz9qQF0pUeO6oyqauKcFARJhWjX9cgTBodjD2is2FgsQwkNMGUZtjQjNnmDthQhG9UgLoucJrhoSL4oxm2FMF0nOGaXhpTKj3RVu8Hq/REmwDSjL2KYCbUjb9jBPdrU8TwzHwlwXKMsMuLSE7x2BnNGNizRp1vTjbIF3asJQ95EYuSW2WYM2dm8F5VnzNmJVxqBbgCkCTmruiTNiC2ojSrl328P87POwsvIJGBs8YnGV6X3CdhH0YWTEcGzhMXwnfGnAxfur7OHsyfU4yzmnG9/fPkkaKNwnOyUaI1SoCK4UeOahIBnv4HfCbVF/r/+JXijYSDZrJGXkoswQlNcEvcQxF8lBG6CvZ3fEoeL3WOAUkw5WWz+/LnYvQibjlyoBTApAHoyHOyThM+EZNYmvilCb6Zkf8fw0hNOs0NYrJ4ktGXSRdF8eBluyJgq+xDPMDu8yv+gdy8/Jb/NMG89TeSPS66w/Xo1w3w5PLoYQGnGDc14e1q6xXDXVlraMThJhsGaM2aVZy64zmKpDIbGMORAjQBwbguZnUFlxPNuCA+WSpwmgbQRKtQUQYuVFpXSjSNX7Q0djNCgPhWE/zMDwhXEVKWG5QSKzKAIc/hqjOqAlEE3zVD2osOIC7KIZXWVBLFsCa++P+amE2ARWdiSV/G0QPsrhWgZrgke2OENyIDKBRhU9p8HQDTkdOMPWjEqfrNE82pBzY3D3lVpGGAO9Uv46ZLsyPgTFpkDFqS6naKBQay6WtBSDi/+AwDQnwO0nZNIFnIRXd5gPWUW4zDYUllQEiErsooKMGGmlNu1VmwdkjgMPabJtzwJC4qxklJaZ0r/rGaHwrKFqyMPfYmer1dEhXA9fDm8XKlpmlmV9B5JtPMlW2awgU4Ka2fdPytBpdY9s9pwm1F+KrsImlapHl2pYRmiaEu00LARmLFjzlVv3LdrQCpwsh9X1OVLg85uWZHOv4ozapyzRfD05o2SyoLzS3PETgrTbVxgQaf32JCJZlUnwkIwm3z9ujQfJUU8x5oAscSb3PHugREVZ9zEQl7eY5QDI8afQLWDAOiqyyV7InXXPkLAjWlNooms8MAAAAASUVORK5CYII=">
+                <h2 style="    font-size: 40px;
+                    font-weight: 700;
+            ">Tutorly Insta</h2>
+                <p class="text-gray-500"><a></a>@ mallvent</p>
+
+            </div>
+        </div>
+        <div style="    display: flex;
+            flex-direction: column;
+            padding-top: 15%;
+            height: 510px;
+            background-color: #1D2228;
+            
+        " class=" w-full h-[400px] ">
+            <div id="gallery" class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-3 mobile:grid-cols-3"
+                style="    width: 90%; margin-top: -19%;  padding-left: 10%;">
+                <img class="thumbnail" src="image/9.jpg" alt="Image 1">
+                <img class="thumbnail" src="image/2 (2).jpg" alt="Image 2">
+                <img class="thumbnail" src="image/3 (1).jpg" alt="Image 3">
+                <img class="thumbnail" src="image/4 (1).jpg" alt="Image 4">
+                <img class="thumbnail" src="image/5 (3).jpg" alt="Image 5">
+            </div>
+
+            <div id="slider-container">
+                <span id="close-btn">&times;</span>
+                <img id="slider" src="" alt="Slider Image">
+                <button id="prev-btn">&lt;</button>
+                <button id="next-btn">&gt;</button>
+            </div>
+            <div style="    width: 100%;
+                padding-top: 7%;
+                height: auto;
+            ">
+                <ul class="flex gap-[2%] justify-center">
+                    <li style=" 
+                        padding: 6px;
+                        text-align: center;
+                        background-color: #29313a;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 100%;
+                    ">
+                        <i class="ri-facebook-fill media"></i>
+                    </li>
+
+                    <li style=" 
+                    padding: 6px;
+                    text-align: center;
+               
+                    background-color: #29313a;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 100%;
+                ">
+                        <i class="ri-twitter-fill media"></i>
+                    <li style=" 
+                    padding: 6px;
+                    text-align: center;
+               
+                    background-color: #29313a;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 100%;
+                ">
+                        <i class="ri-pinterest-fill media"></i>
+                    </li>
+                    <li style=" 
+                    padding: 6px;
+                    text-align: center;
+               
+                    background-color: #29313a;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 100%;
+                ">
+                        <i class="ri-linkedin-fill media"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="pt-[3%]">
+                <ul class="justify-center flex gap-[1%]" style="    justify-content: center;
+                    display: flex;
+                    gap: 1%;
+                    
+                ">
+                    <li> <a href="#" class="sub">Physics</a> </li>
+                    <li> <a href="#" class="sub">Arabic</a> </li>
+                    <li> <a href="#" class="sub">Science</a> </li>
+                    <li> <a href="#" class="sub">Geography</a> </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col justify-center pt-[10%] items-center">
+                <div class="w-[80%] h-[1px] bg-[#1c1b1b] mb-[3%]">
+
+                </div>
+                <p class="m-0">© Copyright 2024 - <a href="#">YourWebsite</a> All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="index.js"> </script>
+
+</html>
